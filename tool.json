@@ -1,0 +1,295 @@
+{
+  "tool": {
+    "id": "pediatric-appendicitis-score",
+    "title": "Pediatric Appendicitis Score (PAS)",
+    "short": "Probabilidade de apendicite na criança",
+    "spec": [
+      "cirurgia-pediatrica",
+      "pediatria",
+      "medicina-de-emergencia",
+      "cirurgia-geral"
+    ],
+    "tier": 1,
+    "desc": "Calcule o Pediatric Appendicitis Score (Samuel) para estimar a probabilidade de apendicite aguda em crianças com dor abdominal e decidir alta, imagem ou cirurgia.",
+    "lead": "Estima a probabilidade de apendicite aguda em crianças e adolescentes com dor abdominal, combinando sintomas, exame físico e hemograma.",
+    "fields": [
+      [
+        "tosse",
+        "Dor na fossa ilíaca direita à tosse, percussão ou salto",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "fid",
+        "Dor à palpação da fossa ilíaca direita",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "anorexia",
+        "Anorexia",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "febre",
+        "Febre (&gt; 38 °C)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "nausea",
+        "Náuseas ou vômitos",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "migra",
+        "Migração da dor para a fossa ilíaca direita",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "leuco",
+        "Leucocitose (&gt; 10.000/mm³)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "neut",
+        "Neutrofilia (neutrófilos &gt; 7.500/mm³)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "score": {
+      "label": "PAS",
+      "unit": "de 10",
+      "bands": [
+        [
+          0,
+          "low",
+          "Baixa probabilidade de apendicite (≤ 2)",
+          "Na validação de Goldman (2008), só 2,4% das crianças com apendicite tinham PAS ≤ 2: alta com orientação de retorno."
+        ],
+        [
+          3,
+          "mid",
+          "Probabilidade intermediária (3 a 6)",
+          "Investigar: observação com reavaliação seriada e ultrassonografia (tomografia se a ultrassonografia for inconclusiva)."
+        ],
+        [
+          7,
+          "high",
+          "Alta probabilidade de apendicite (≥ 7)",
+          "Avaliação do cirurgião pediátrico; na validação, só 4% dos operados com PAS ≥ 7 não tinham apendicite."
+        ]
+      ]
+    },
+    "formula": "<p>2 pontos: dor à tosse, percussão ou salto na fossa ilíaca direita; dor à palpação da fossa ilíaca direita. 1 ponto: anorexia, febre, náuseas/vômitos, migração da dor, leucocitose e neutrofilia. Total de 0 a 10.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Interpretação (Goldman 2008)"
+      ],
+      [
+        "≤ 2",
+        "Apendicite improvável"
+      ],
+      [
+        "3 a 6",
+        "Indeterminado: observação e imagem"
+      ],
+      [
+        "≥ 7",
+        "Apendicite provável"
+      ]
+    ],
+    "table_note": "No estudo original (Samuel 2002), ≥ 6 pontos foi considerado compatível com apendicite.",
+    "tips": [
+      "Validado em crianças de 1 a 17 anos com dor abdominal de até 7 dias; em menores de 4 anos, a apresentação é atípica e a perfuração é mais frequente.",
+      "Na faixa intermediária, a ultrassonografia feita por examinador experiente é o exame de imagem inicial (evita radiação); a tomografia fica para os casos inconclusivos.",
+      "Um PAS baixo não substitui a reavaliação: oriente retorno se a dor piorar, migrar para a fossa ilíaca direita ou surgirem febre e vômitos.",
+      "Em adolescentes do sexo feminino, lembre de causas ginecológicas (torção ovariana, cisto roto, gravidez ectópica): peça beta-hCG."
+    ],
+    "sources": [
+      [
+        "Samuel M. Pediatric appendicitis score. J Pediatr Surg, 2002.",
+        "https://doi.org/10.1053/jpsu.2002.32893"
+      ],
+      [
+        "Goldman RD et al. Prospective validation of the pediatric appendicitis score. J Pediatr, 2008.",
+        "https://doi.org/10.1016/j.jpeds.2008.01.033"
+      ]
+    ],
+    "cases": [
+      [
+        "Anorexia e náuseas: 2 pontos (baixa, limite)",
+        {
+          "anorexia": true,
+          "nausea": true
+        },
+        {
+          "score": 2,
+          "level": "low"
+        }
+      ],
+      [
+        "Dor à tosse, dor na FID e febre: 5 pontos (intermediária)",
+        {
+          "tosse": true,
+          "fid": true,
+          "febre": true
+        },
+        {
+          "score": 5,
+          "level": "mid"
+        }
+      ],
+      [
+        "Dor à tosse, dor na FID, leucocitose, neutrofilia e migração: 7 pontos (alta, limite)",
+        {
+          "tosse": true,
+          "fid": true,
+          "leuco": true,
+          "neut": true,
+          "migra": true
+        },
+        {
+          "score": 7,
+          "level": "high"
+        }
+      ],
+      [
+        "Todos os itens: 10 pontos",
+        {
+          "tosse": true,
+          "fid": true,
+          "anorexia": true,
+          "febre": true,
+          "nausea": true,
+          "migra": true,
+          "leuco": true,
+          "neut": true
+        },
+        {
+          "score": 10,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "mulher-crianca",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 10",
+      "label": "PAS",
+      "fields": [
+        [
+          "tosse",
+          "chk",
+          2
+        ],
+        [
+          "fid",
+          "chk",
+          2
+        ],
+        [
+          "anorexia",
+          "chk",
+          1
+        ],
+        [
+          "febre",
+          "chk",
+          1
+        ],
+        [
+          "nausea",
+          "chk",
+          1
+        ],
+        [
+          "migra",
+          "chk",
+          1
+        ],
+        [
+          "leuco",
+          "chk",
+          1
+        ],
+        [
+          "neut",
+          "chk",
+          1
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Baixa probabilidade de apendicite (≤ 2)",
+          "Na validação de Goldman (2008), só 2,4% das crianças com apendicite tinham PAS ≤ 2: alta com orientação de retorno."
+        ],
+        [
+          3,
+          "mid",
+          "Probabilidade intermediária (3 a 6)",
+          "Investigar: observação com reavaliação seriada e ultrassonografia (tomografia se a ultrassonografia for inconclusiva)."
+        ],
+        [
+          7,
+          "high",
+          "Alta probabilidade de apendicite (≥ 7)",
+          "Avaliação do cirurgião pediátrico; na validação, só 4% dos operados com PAS ≥ 7 não tinham apendicite."
+        ]
+      ]
+    },
+    "areaId": "mulher-crianca",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/mulher-crianca.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/mulher-crianca.php",
+    "sha256": "c37d3fefb430d6ec19144161e40e9a08247f3a10406e2873c8d6a4be8649917c",
+    "bytes": 81915
+  },
+  "clinicalValidation": "not-performed"
+}

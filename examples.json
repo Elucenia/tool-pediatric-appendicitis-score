@@ -1,0 +1,86 @@
+[
+  {
+    "label": "Anorexia e náuseas: 2 pontos (baixa, limite)",
+    "input": {
+      "anorexia": true,
+      "nausea": true
+    },
+    "expected": {
+      "score": 2,
+      "level": "low"
+    },
+    "originalInput": {
+      "anorexia": true,
+      "nausea": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Dor à tosse, dor na FID e febre: 5 pontos (intermediária)",
+    "input": {
+      "tosse": true,
+      "fid": true,
+      "febre": true
+    },
+    "expected": {
+      "score": 5,
+      "level": "mid"
+    },
+    "originalInput": {
+      "tosse": true,
+      "fid": true,
+      "febre": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Dor à tosse, dor na FID, leucocitose, neutrofilia e migração: 7 pontos (alta, limite)",
+    "input": {
+      "tosse": true,
+      "fid": true,
+      "leuco": true,
+      "neut": true,
+      "migra": true
+    },
+    "expected": {
+      "score": 7,
+      "level": "high"
+    },
+    "originalInput": {
+      "tosse": true,
+      "fid": true,
+      "leuco": true,
+      "neut": true,
+      "migra": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Todos os itens: 10 pontos",
+    "input": {
+      "tosse": true,
+      "fid": true,
+      "anorexia": true,
+      "febre": true,
+      "nausea": true,
+      "migra": true,
+      "leuco": true,
+      "neut": true
+    },
+    "expected": {
+      "score": 10,
+      "level": "high"
+    },
+    "originalInput": {
+      "tosse": true,
+      "fid": true,
+      "anorexia": true,
+      "febre": true,
+      "nausea": true,
+      "migra": true,
+      "leuco": true,
+      "neut": true
+    },
+    "expandedZeroOptions": []
+  }
+]
