@@ -1,11 +1,11 @@
-/* tool-pediatric-appendicitis-score · Elucenia · https://github.com/Elucenia/tool-pediatric-appendicitis-score
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-pediatric-appendicitis-score · ELUCENIA · https://github.com/Elucenia/tool-pediatric-appendicitis-score
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"pediatric-appendicitis-score","title":"Pediatric Appendicitis Score (PAS)","fields":[["tosse","Dor na fossa ilíaca direita à tosse, percussão ou salto","chk",{"pts":2}],["fid","Dor à palpação da fossa ilíaca direita","chk",{"pts":2}],["anorexia","Anorexia","chk",{"pts":1}],["febre","Febre (&gt; 38 °C)","chk",{"pts":1}],["nausea","Náuseas ou vômitos","chk",{"pts":1}],["migra","Migração da dor para a fossa ilíaca direita","chk",{"pts":1}],["leuco","Leucocitose (&gt; 10.000/mm³)","chk",{"pts":1}],["neut","Neutrofilia (neutrófilos &gt; 7.500/mm³)","chk",{"pts":1}]],"config":{"unit":"de 10","label":"PAS","fields":[["tosse","chk",2],["fid","chk",2],["anorexia","chk",1],["febre","chk",1],["nausea","chk",1],["migra","chk",1],["leuco","chk",1],["neut","chk",1]],"bands":[[0,"low","Baixa probabilidade de apendicite (≤ 2)","Na validação de Goldman (2008), só 2,4% das crianças com apendicite tinham PAS ≤ 2: alta com orientação de retorno."],[3,"mid","Probabilidade intermediária (3 a 6)","Investigar: observação com reavaliação seriada e ultrassonografia (tomografia se a ultrassonografia for inconclusiva)."],[7,"high","Alta probabilidade de apendicite (≥ 7)","Avaliação do cirurgião pediátrico; na validação, só 4% dos operados com PAS ≥ 7 não tinham apendicite."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
