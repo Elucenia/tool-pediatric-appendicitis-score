@@ -3,131 +3,66 @@
     "id": "pediatric-appendicitis-score",
     "title": "Pediatric Appendicitis Score (PAS)",
     "short": "Probabilidade de apendicite na criança",
+    "desc": "Calcule o Pediatric Appendicitis Score (Samuel) para estimar a probabilidade de apendicite aguda em crianças com dor abdominal e decidir alta, imagem ou cirurgia.",
+    "lead": "Estima a probabilidade de apendicite aguda em crianças e adolescentes com dor abdominal, combinando sintomas, exame físico e hemograma.",
+    "kind": "Escore",
     "spec": [
       "cirurgia-pediatrica",
       "pediatria",
       "medicina-de-emergencia",
       "cirurgia-geral"
     ],
-    "tier": 1,
-    "desc": "Calcule o Pediatric Appendicitis Score (Samuel) para estimar a probabilidade de apendicite aguda em crianças com dor abdominal e decidir alta, imagem ou cirurgia.",
-    "lead": "Estima a probabilidade de apendicite aguda em crianças e adolescentes com dor abdominal, combinando sintomas, exame físico e hemograma.",
     "fields": [
       [
         "tosse",
         "Dor na fossa ilíaca direita à tosse, percussão ou salto",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "fid",
         "Dor à palpação da fossa ilíaca direita",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "anorexia",
         "Anorexia",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "febre",
         "Febre (&gt; 38 °C)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "nausea",
         "Náuseas ou vômitos",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "migra",
         "Migração da dor para a fossa ilíaca direita",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "leuco",
         "Leucocitose (&gt; 10.000/mm³)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "neut",
         "Neutrofilia (neutrófilos &gt; 7.500/mm³)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "PAS",
-      "unit": "de 10",
-      "bands": [
-        [
-          0,
-          "low",
-          "Baixa probabilidade de apendicite (≤ 2)",
-          "Na validação de Goldman (2008), só 2,4% das crianças com apendicite tinham PAS ≤ 2: alta com orientação de retorno."
-        ],
-        [
-          3,
-          "mid",
-          "Probabilidade intermediária (3 a 6)",
-          "Investigar: observação com reavaliação seriada e ultrassonografia (tomografia se a ultrassonografia for inconclusiva)."
-        ],
-        [
-          7,
-          "high",
-          "Alta probabilidade de apendicite (≥ 7)",
-          "Avaliação do cirurgião pediátrico; na validação, só 4% dos operados com PAS ≥ 7 não tinham apendicite."
-        ]
-      ]
-    },
     "formula": "<p>2 pontos: dor à tosse, percussão ou salto na fossa ilíaca direita; dor à palpação da fossa ilíaca direita. 1 ponto: anorexia, febre, náuseas/vômitos, migração da dor, leucocitose e neutrofilia. Total de 0 a 10.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Interpretação (Goldman 2008)"
-      ],
-      [
-        "≤ 2",
-        "Apendicite improvável"
-      ],
-      [
-        "3 a 6",
-        "Indeterminado: observação e imagem"
-      ],
-      [
-        "≥ 7",
-        "Apendicite provável"
-      ]
-    ],
-    "table_note": "No estudo original (Samuel 2002), ≥ 6 pontos foi considerado compatível com apendicite.",
-    "tips": [
-      "Validado em crianças de 1 a 17 anos com dor abdominal de até 7 dias; em menores de 4 anos, a apresentação é atípica e a perfuração é mais frequente.",
-      "Na faixa intermediária, a ultrassonografia feita por examinador experiente é o exame de imagem inicial (evita radiação); a tomografia fica para os casos inconclusivos.",
-      "Um PAS baixo não substitui a reavaliação: oriente retorno se a dor piorar, migrar para a fossa ilíaca direita ou surgirem febre e vômitos.",
-      "Em adolescentes do sexo feminino, lembre de causas ginecológicas (torção ovariana, cisto roto, gravidez ectópica): peça beta-hCG."
-    ],
     "sources": [
       [
         "Samuel M. Pediatric appendicitis score. J Pediatr Surg, 2002.",
@@ -136,6 +71,14 @@
       [
         "Goldman RD et al. Prospective validation of the pediatric appendicitis score. J Pediatr, 2008.",
         "https://doi.org/10.1016/j.jpeds.2008.01.033"
+      ],
+      [
+        "Samuel2002;DOI10.1053/jpsu.2002.32893",
+        "https://pubmed.ncbi.nlm.nih.gov/12037754/"
+      ],
+      [
+        "Goldman2008;DOI10.1016/j.jpeds.2008.01.033",
+        "https://emergency.med.ufl.edu/files/2013/02/prospective-validation-of-pediatric-appendicitis-score.pdf"
       ]
     ],
     "cases": [
@@ -194,74 +137,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 10",
-      "label": "PAS",
-      "fields": [
-        [
-          "tosse",
-          "chk",
-          2
-        ],
-        [
-          "fid",
-          "chk",
-          2
-        ],
-        [
-          "anorexia",
-          "chk",
-          1
-        ],
-        [
-          "febre",
-          "chk",
-          1
-        ],
-        [
-          "nausea",
-          "chk",
-          1
-        ],
-        [
-          "migra",
-          "chk",
-          1
-        ],
-        [
-          "leuco",
-          "chk",
-          1
-        ],
-        [
-          "neut",
-          "chk",
-          1
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Baixa probabilidade de apendicite (≤ 2)",
-          "Na validação de Goldman (2008), só 2,4% das crianças com apendicite tinham PAS ≤ 2: alta com orientação de retorno."
-        ],
-        [
-          3,
-          "mid",
-          "Probabilidade intermediária (3 a 6)",
-          "Investigar: observação com reavaliação seriada e ultrassonografia (tomografia se a ultrassonografia for inconclusiva)."
-        ],
-        [
-          7,
-          "high",
-          "Alta probabilidade de apendicite (≥ 7)",
-          "Avaliação do cirurgião pediátrico; na validação, só 4% dos operados com PAS ≥ 7 não tinham apendicite."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -270,17 +145,490 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T16:56:01.134Z",
+      "total": 256,
+      "passed": 256,
+      "sourceRowCount": 256,
+      "uniqueApiInputCount": 256,
+      "sourceContextCount": 256,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "199fda14591e2015869b0a6d2b9bb904b6cc5a69ac5367b2393de9515ff176bd",
+        "total": 256,
+        "bankRowCount": 256,
+        "uniqueApiInputCount": 256,
+        "sourceContextCount": 256,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/eight-point-total-independent-expectations-publication-final26.json",
+            "sha256": "8cf68c5141b705cb0ac5cf5f1e06703b9bd76824beea212df5d343f8fd688c58"
+          },
+          {
+            "file": "reports/review-20261003/eight-risk-independent-expectations-final26.json",
+            "sha256": "f5e7d0e09fb4dadaa01dd489cbca1ad3ee8e847771b8409947f3fc43ad7f4a82"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/eight-point-total-independent-check-publication-final26-r2.json",
+          "sha256": "f22416952f317ef50932276df98da8fd5ffe42b9130768b858ef17eaf21d38ce"
+        },
+        "packagingRequirement": "Copy this score-only complete bank into fresh frozen26 packages only after metadata/source composition and independent peer."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 256,
+        "uniqueApiInputs": 256,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/eight-point-total-independent-expectations-publication-final26.json",
+          "sha256": "8cf68c5141b705cb0ac5cf5f1e06703b9bd76824beea212df5d343f8fd688c58"
+        }
+      },
+      "scope": "Exact weighted integer sum of 256 exhaustive represented caller-selected point/binary tuples for pediatric-appendicitis-score. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+      "sources": [
+        {
+          "id": "pediatric-appendicitis-score",
+          "edition": "Samuel2002 PAS; Goldman2008 validation provides explicit assay/fever cutoffs",
+          "url": "https://com-emergency.sites.medinfo.ufl.edu/files/2013/02/Pediatric-Appendicitis-Score.pdf",
+          "doi": "10.1053/jpsu.2002.32893",
+          "access": "Original2002 and validation2008 PDFs downloaded from university mirror; originalTable2/score Discussion visually inspected; validation study design and point definitions read.",
+          "readScope": [
+            "SamuelPDFp1 Methods/exclusions",
+            "SamuelPDFp2 Table2, printed878",
+            "SamuelPDFp3 score thresholds, printed879",
+            "GoldmanPDFp1 abstract andp2 Methods/definitions"
+          ],
+          "notVerified": [
+            "Raw clinical/laboratory threshold classification",
+            "Patient diagnosis/surgery decision and modern risk-triad validation",
+            "Exact edition for every current diagnostic cutoff"
+          ],
+          "sourceComponent": "Selected integer point sum only; detailed clinical cohort/band facts remain in the frozen original source review."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/eight-point-total-independent-check-publication-final26-r2.json",
+      "evidenceSha256": "f22416952f317ef50932276df98da8fd5ffe42b9130768b858ef17eaf21d38ce",
+      "originalEvidence": {
+        "file": "reports/review-20261003/eight-risk-independent-source-check-final26.json",
+        "sha256": "b816fcbdbc88a75d30dba462f1d7a1ecfacb49b3d5487709ee9d1bd470c6d832"
+      },
+      "independentPeer": {
+        "status": "passed",
+        "requiredScope": "Metadata/bank/helper peer before root composition and application; clinical approval not inferred.",
+        "recordedAt": "2026-10-04T18:58:12.659Z",
+        "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+        "previousStatus": {
+          "status": "pending",
+          "requiredScope": "Metadata/bank/helper peer before root composition and application; clinical approval not inferred."
+        },
+        "peer": {
+          "file": "reports/review-20261003/eight-point-total-source-evidence-independent-peer-final26-r2.json",
+          "sha256": "6d1b854d021eef9f0f5916ed7f81a70dc8359dae5824f2508c70d29b33732d5c",
+          "summary": {
+            "checks": 8278,
+            "failed": 0,
+            "methods": 8,
+            "sourceRows": 1132,
+            "uniqueInputs": 1132,
+            "freshExecutions": 3396,
+            "helperAssertions": 6888,
+            "metadataMethods": 128,
+            "metadataRows": 53752,
+            "metadataUnique": 53680,
+            "metadataRepeats": 72
+          },
+          "scope": "Root independent peer of exact46 preimages/afterimages; independently frozen1132 input/expected objects checked before imports; public bank numeric projection excludes untested survival, zones, prose and risk codes. Original862fixtures, fields, methods, versions and approvals retained. Exact helper reversal restores all18 previous scopes;24 fresh Node helper executions replay all8 selected-point components without clinical approval."
+        },
+        "application": {
+          "file": "reports/review-20261003/eight-point-total-source-evidence-application-final26.json",
+          "sha256": "ff192c36cc1774e583fe2b8bcdd2e10b275e774ff633d180534b012cfe5b87e3"
+        },
+        "reviewedBankScope": "Exact weighted integer sum of 256 exhaustive represented caller-selected point/binary tuples for pediatric-appendicitis-score. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+        "currentBinding": {
+          "source26BankSha256": "06f39c4df3dd757e82dc92d37e8d2c2e40f7ccec148ad04e9955e4f1df68d468",
+          "implementations": [
+            {
+              "file": "apps/website/private/tool-code/pediatric-appendicitis-score/calculator.js",
+              "sha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+            },
+            {
+              "file": "apps/dashboard/private/tool-code/pediatric-appendicitis-score/calculator.js",
+              "sha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+            },
+            {
+              "file": "apps/command-center/private/tool-code/pediatric-appendicitis-score/calculator.js",
+              "sha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+            }
+          ],
+          "subsequentReviewedRebinds": []
+        },
+        "originalFailuresAndScopeQualificationsPreserved": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 768,
+      "actualVmExecutions": 768,
+      "implementations": [
+        {
+          "id": "pediatric-appendicitis-score",
+          "app": "website",
+          "file": "apps/website/private/tool-code/pediatric-appendicitis-score/calculator.js",
+          "sha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+        },
+        {
+          "id": "pediatric-appendicitis-score",
+          "app": "dashboard",
+          "file": "apps/dashboard/private/tool-code/pediatric-appendicitis-score/calculator.js",
+          "sha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+        },
+        {
+          "id": "pediatric-appendicitis-score",
+          "app": "command-center",
+          "file": "apps/command-center/private/tool-code/pediatric-appendicitis-score/calculator.js",
+          "sha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+        }
+      ],
+      "qualifications": [
+        "Exact weighted integer sum of 256 exhaustive represented caller-selected point/binary tuples for pediatric-appendicitis-score. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+        "All862 historical fixtures and every field/formula/version/approval unchanged by this candidate. Original source/clinical failures and edition warnings are not overwritten.",
+        "Four inline metadata rows are only a subset of the complete hashed downloadable bank. Independent professional/clinical/rights and full-method approvals are not performed."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "PAS/Samuel 2002:8 fatores,0–10; sem Alvarado oup ARC",
+    "implementationVersion": "pediatric-appendicitis-score@native-2026-10-03+280a54f88322",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/12037754/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "2 pontos: dor à tosse, percussão ou salto na fossa ilíaca direita; dor à palpação da fossa ilíaca direita. 1 ponto: anorexia, febre, náuseas/vômitos, migração da dor, leucocitose e neutrofilia. Total de 0 a 10.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "tosse",
+            "label": "Dor na fossa ilíaca direita à tosse, percussão ou salto",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "fid",
+            "label": "Dor à palpação da fossa ilíaca direita",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "anorexia",
+            "label": "Anorexia",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "febre",
+            "label": "Febre (&gt; 38 °C)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "nausea",
+            "label": "Náuseas ou vômitos",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "migra",
+            "label": "Migração da dor para a fossa ilíaca direita",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "leuco",
+            "label": "Leucocitose (&gt; 10.000/mm³)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "neut",
+            "label": "Neutrofilia (neutrófilos &gt; 7.500/mm³)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "c2b21f2bddf2d230743f148b7312bdbb25f83194e25135970bffa7e67007a5c3"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Samuel M. Pediatric appendicitis score. J Pediatr Surg, 2002.",
+          "url": "https://doi.org/10.1053/jpsu.2002.32893",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Pediatric appendicitis score.",
+            "year": "2002",
+            "firstPublicationDate": "2002-06-01",
+            "doi": "10.1053/jpsu.2002.32893",
+            "pmid": "12037754",
+            "journal": "Journal of pediatric surgery",
+            "authors": "Samuel M."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/12037754/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "1a86f14f43a105cf9743cde473f29967443771c97dc029b731db67954231a98a",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Goldman RD et al. Prospective validation of the pediatric appendicitis score. J Pediatr, 2008.",
+          "url": "https://doi.org/10.1016/j.jpeds.2008.01.033",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Prospective validation of the pediatric appendicitis score.",
+            "year": "2008",
+            "firstPublicationDate": "2008-03-19",
+            "doi": "10.1016/j.jpeds.2008.01.033",
+            "pmid": "18534219",
+            "journal": "The Journal of pediatrics",
+            "authors": "Goldman RD, Carter S, Stephens D, Antoon R, Mounstephen W, Langer JC."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/18534219/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "c081e57dac3978a337bdada42e3e57f11e5eb78484c003bc8005a7d12f333de6",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T16:56:01.134Z",
+        "total": 256,
+        "passed": 256,
+        "sourceRowCount": 256,
+        "uniqueApiInputCount": 256,
+        "sourceContextCount": 256,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "199fda14591e2015869b0a6d2b9bb904b6cc5a69ac5367b2393de9515ff176bd",
+          "total": 256,
+          "bankRowCount": 256,
+          "uniqueApiInputCount": 256,
+          "sourceContextCount": 256,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/eight-point-total-independent-expectations-publication-final26.json",
+              "sha256": "8cf68c5141b705cb0ac5cf5f1e06703b9bd76824beea212df5d343f8fd688c58"
+            },
+            {
+              "file": "reports/review-20261003/eight-risk-independent-expectations-final26.json",
+              "sha256": "f5e7d0e09fb4dadaa01dd489cbca1ad3ee8e847771b8409947f3fc43ad7f4a82"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/eight-point-total-independent-check-publication-final26-r2.json",
+            "sha256": "f22416952f317ef50932276df98da8fd5ffe42b9130768b858ef17eaf21d38ce"
+          },
+          "packagingRequirement": "Copy this score-only complete bank into fresh frozen26 packages only after metadata/source composition and independent peer."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 256,
+          "uniqueApiInputs": 256,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/eight-point-total-independent-expectations-publication-final26.json",
+            "sha256": "8cf68c5141b705cb0ac5cf5f1e06703b9bd76824beea212df5d343f8fd688c58"
+          }
+        },
+        "scope": "Exact weighted integer sum of 256 exhaustive represented caller-selected point/binary tuples for pediatric-appendicitis-score. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+        "sources": [
+          {
+            "id": "pediatric-appendicitis-score",
+            "edition": "Samuel2002 PAS; Goldman2008 validation provides explicit assay/fever cutoffs",
+            "url": "https://com-emergency.sites.medinfo.ufl.edu/files/2013/02/Pediatric-Appendicitis-Score.pdf",
+            "doi": "10.1053/jpsu.2002.32893",
+            "access": "Original2002 and validation2008 PDFs downloaded from university mirror; originalTable2/score Discussion visually inspected; validation study design and point definitions read.",
+            "readScope": [
+              "SamuelPDFp1 Methods/exclusions",
+              "SamuelPDFp2 Table2, printed878",
+              "SamuelPDFp3 score thresholds, printed879",
+              "GoldmanPDFp1 abstract andp2 Methods/definitions"
+            ],
+            "notVerified": [
+              "Raw clinical/laboratory threshold classification",
+              "Patient diagnosis/surgery decision and modern risk-triad validation",
+              "Exact edition for every current diagnostic cutoff"
+            ],
+            "sourceComponent": "Selected integer point sum only; detailed clinical cohort/band facts remain in the frozen original source review."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/eight-point-total-independent-check-publication-final26-r2.json",
+        "evidenceSha256": "f22416952f317ef50932276df98da8fd5ffe42b9130768b858ef17eaf21d38ce",
+        "originalEvidence": {
+          "file": "reports/review-20261003/eight-risk-independent-source-check-final26.json",
+          "sha256": "b816fcbdbc88a75d30dba462f1d7a1ecfacb49b3d5487709ee9d1bd470c6d832"
+        },
+        "independentPeer": {
+          "status": "passed",
+          "requiredScope": "Metadata/bank/helper peer before root composition and application; clinical approval not inferred.",
+          "recordedAt": "2026-10-04T18:58:12.659Z",
+          "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+          "previousStatus": {
+            "status": "pending",
+            "requiredScope": "Metadata/bank/helper peer before root composition and application; clinical approval not inferred."
+          },
+          "peer": {
+            "file": "reports/review-20261003/eight-point-total-source-evidence-independent-peer-final26-r2.json",
+            "sha256": "6d1b854d021eef9f0f5916ed7f81a70dc8359dae5824f2508c70d29b33732d5c",
+            "summary": {
+              "checks": 8278,
+              "failed": 0,
+              "methods": 8,
+              "sourceRows": 1132,
+              "uniqueInputs": 1132,
+              "freshExecutions": 3396,
+              "helperAssertions": 6888,
+              "metadataMethods": 128,
+              "metadataRows": 53752,
+              "metadataUnique": 53680,
+              "metadataRepeats": 72
+            },
+            "scope": "Root independent peer of exact46 preimages/afterimages; independently frozen1132 input/expected objects checked before imports; public bank numeric projection excludes untested survival, zones, prose and risk codes. Original862fixtures, fields, methods, versions and approvals retained. Exact helper reversal restores all18 previous scopes;24 fresh Node helper executions replay all8 selected-point components without clinical approval."
+          },
+          "application": {
+            "file": "reports/review-20261003/eight-point-total-source-evidence-application-final26.json",
+            "sha256": "ff192c36cc1774e583fe2b8bcdd2e10b275e774ff633d180534b012cfe5b87e3"
+          },
+          "reviewedBankScope": "Exact weighted integer sum of 256 exhaustive represented caller-selected point/binary tuples for pediatric-appendicitis-score. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+          "currentBinding": {
+            "source26BankSha256": "06f39c4df3dd757e82dc92d37e8d2c2e40f7ccec148ad04e9955e4f1df68d468",
+            "implementations": [
+              {
+                "file": "apps/website/private/tool-code/pediatric-appendicitis-score/calculator.js",
+                "sha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+              },
+              {
+                "file": "apps/dashboard/private/tool-code/pediatric-appendicitis-score/calculator.js",
+                "sha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+              },
+              {
+                "file": "apps/command-center/private/tool-code/pediatric-appendicitis-score/calculator.js",
+                "sha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+              }
+            ],
+            "subsequentReviewedRebinds": []
+          },
+          "originalFailuresAndScopeQualificationsPreserved": true,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 768,
+        "actualVmExecutions": 768,
+        "implementations": [
+          {
+            "id": "pediatric-appendicitis-score",
+            "app": "website",
+            "file": "apps/website/private/tool-code/pediatric-appendicitis-score/calculator.js",
+            "sha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+          },
+          {
+            "id": "pediatric-appendicitis-score",
+            "app": "dashboard",
+            "file": "apps/dashboard/private/tool-code/pediatric-appendicitis-score/calculator.js",
+            "sha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+          },
+          {
+            "id": "pediatric-appendicitis-score",
+            "app": "command-center",
+            "file": "apps/command-center/private/tool-code/pediatric-appendicitis-score/calculator.js",
+            "sha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+          }
+        ],
+        "qualifications": [
+          "Exact weighted integer sum of 256 exhaustive represented caller-selected point/binary tuples for pediatric-appendicitis-score. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+          "All862 historical fixtures and every field/formula/version/approval unchanged by this candidate. Original source/clinical failures and edition warnings are not overwritten.",
+          "Four inline metadata rows are only a subset of the complete hashed downloadable bank. Independent professional/clinical/rights and full-method approvals are not performed."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+    },
+    "limits": "O PAS original de Samuel (2002) foi derivado em crianças de 4–15 anos. A validação de Goldman (2008) estudou crianças de 1–17 anos com dor abdominal há menos de 7 dias; excluiu apendicectomia prévia e diagnóstico de apendicite por ultrassonografia ou tomografia já estabelecido na chegada. A avaliação de sintomas subjetivos exige cuidado em crianças que ainda não conseguem comunicá-los. O escore não é pARC nem determina sozinho diagnóstico, alta, imagem ou cirurgia.",
+    "limitsEvidence": {
+      "status": "primary-source-documentation-checked",
+      "sources": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12037754/",
+          "edition": "Samuel2002;DOI10.1053/jpsu.2002.32893",
+          "sectionsActuallyRead": "Resumo do autor indexado, população4–15",
+          "access": "primary-indexed-author-abstract"
+        },
+        {
+          "url": "https://emergency.med.ufl.edu/files/2013/02/prospective-validation-of-pediatric-appendicitis-score.pdf",
+          "edition": "Goldman2008;DOI10.1016/j.jpeds.2008.01.033",
+          "sectionsActuallyRead": "PDF1–2 métodos/inclusões/exclusões e discussãoPDF4 sobre comunicação",
+          "access": "primary-original-article-copy-readable-text"
+        }
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "arithmeticChanged": false
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/pediatric-appendicitis-score/calculator.js",
+    "bytes": 5288,
+    "sha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "7ed56e7dc40cd8d4c3b70b68becabdad92d90e3429872fb5a159af742d1e6f82",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "dcee32c314d3fc72afc2ca735e102ef83773ad5cd899e72385d0d15216610ee3",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "dcee32c314d3fc72afc2ca735e102ef83773ad5cd899e72385d0d15216610ee3",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

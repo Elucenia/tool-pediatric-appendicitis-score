@@ -1,62 +1,149 @@
 [
   {
-    "label": "Anorexia e náuseas: 2 pontos (baixa, limite)",
-    "input": {
+    "id": "pediatric-appendicitis-score",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Anorexia e náuseas: 2 pontos (baixa, limite)",
+    "originalInput": {
       "anorexia": true,
       "nausea": true
+    },
+    "input": {
+      "anorexia": true,
+      "nausea": true,
+      "tosse": false,
+      "fid": false,
+      "febre": false,
+      "migra": false,
+      "leuco": false,
+      "neut": false
     },
     "expected": {
       "score": 2,
       "level": "low"
     },
-    "originalInput": {
-      "anorexia": true,
-      "nausea": true
+    "recordedResult": {
+      "main": [
+        "2",
+        "de 10"
+      ],
+      "label": "PAS",
+      "raw": {
+        "score": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Dor à tosse, dor na FID e febre: 5 pontos (intermediária)",
-    "input": {
+    "id": "pediatric-appendicitis-score",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Dor à tosse, dor na FID e febre: 5 pontos (intermediária)",
+    "originalInput": {
       "tosse": true,
       "fid": true,
       "febre": true
+    },
+    "input": {
+      "tosse": true,
+      "fid": true,
+      "febre": true,
+      "anorexia": false,
+      "nausea": false,
+      "migra": false,
+      "leuco": false,
+      "neut": false
     },
     "expected": {
       "score": 5,
       "level": "mid"
     },
+    "recordedResult": {
+      "main": [
+        "5",
+        "de 10"
+      ],
+      "label": "PAS",
+      "raw": {
+        "score": 5
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "pediatric-appendicitis-score",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Dor à tosse, dor na FID, leucocitose, neutrofilia e migração: 7 pontos (alta, limite)",
     "originalInput": {
       "tosse": true,
       "fid": true,
-      "febre": true
+      "leuco": true,
+      "neut": true,
+      "migra": true
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Dor à tosse, dor na FID, leucocitose, neutrofilia e migração: 7 pontos (alta, limite)",
     "input": {
       "tosse": true,
       "fid": true,
       "leuco": true,
       "neut": true,
-      "migra": true
+      "migra": true,
+      "anorexia": false,
+      "febre": false,
+      "nausea": false
     },
     "expected": {
       "score": 7,
       "level": "high"
     },
+    "recordedResult": {
+      "main": [
+        "7",
+        "de 10"
+      ],
+      "label": "PAS",
+      "raw": {
+        "score": 7
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "pediatric-appendicitis-score",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Todos os itens: 10 pontos",
     "originalInput": {
       "tosse": true,
       "fid": true,
+      "anorexia": true,
+      "febre": true,
+      "nausea": true,
+      "migra": true,
       "leuco": true,
-      "neut": true,
-      "migra": true
+      "neut": true
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Todos os itens: 10 pontos",
     "input": {
       "tosse": true,
       "fid": true,
@@ -71,16 +158,23 @@
       "score": 10,
       "level": "high"
     },
-    "originalInput": {
-      "tosse": true,
-      "fid": true,
-      "anorexia": true,
-      "febre": true,
-      "nausea": true,
-      "migra": true,
-      "leuco": true,
-      "neut": true
+    "recordedResult": {
+      "main": [
+        "10",
+        "de 10"
+      ],
+      "label": "PAS",
+      "raw": {
+        "score": 10
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

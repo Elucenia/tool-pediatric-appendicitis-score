@@ -1,0 +1,88 @@
+{
+  "id": "pediatric-appendicitis-score",
+  "repository": "Elucenia/tool-pediatric-appendicitis-score",
+  "branch": "main",
+  "commit": "be0c420af4c2c648a7c2604fad4bc4186dc6d8b6",
+  "archiveSha256": "4a091916a0eebfc5b5ecb885919fa6bc4c84dbc13b5aeb291561217fe11f26a6",
+  "protectedFiles": [
+    {
+      "path": ".gitattributes",
+      "type": "blob",
+      "mode": "100644",
+      "size": 19,
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "blob",
+      "mode": "100644",
+      "size": 279,
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "mode": "100644",
+      "size": 42,
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+    },
+    {
+      "path": "AUTHORSHIP.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 3353,
+      "sha": "6fd273842bb1d409cf3db232e40a2e05bdbc85b6",
+      "sha256": "83f71e673f6161946b4ae85c07b1c25f19e5f004f768075d4b41cff87ff39707"
+    },
+    {
+      "path": "CITATION.cff",
+      "type": "blob",
+      "mode": "100644",
+      "size": 957,
+      "sha": "a99ae01be67ee2d49cb311ff4fc72e277142fd80",
+      "sha256": "2f43ffaca6776bc50ecbcb8209368ca6c8454307a5c28db24e49f5d3b206e0ed"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1479,
+      "sha": "6ac4b1d8545886f088b50268fb0d15845d12497e",
+      "sha256": "3a0dc14ae12ba4676da3dbf84d2a0b2b41d12c2fa0742cfaca8ef39629323d07"
+    },
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 11358,
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1671,
+      "sha": "0fdb374246a18f6551c6056c336fa773647d2bb0",
+      "sha256": "8b216ba28635999654d3d8aac572e85d8f2c27cf9a5e9d49cd234d8129cf8db8"
+    },
+    {
+      "path": "SECURITY.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 894,
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+    }
+  ],
+  "receipt": {
+    "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+    "bytes": 6066154,
+    "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+  },
+  "remoteCodeExecuted": false,
+  "freshBranchReadRequiredBeforePublication": true
+}
