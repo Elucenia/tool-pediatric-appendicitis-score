@@ -89,3 +89,35 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Low probability of appendicitis (≤ 2)
+
+In the Goldman validation (2008), only 2.4% of children with appendicitis had PAS ≤ 2: discharge with return precautions.
+
+
+### 2
+
+Intermediate probability (3 to 6)
+
+Investigate: observation with serial reassessment and ultrasonography (CT if ultrasonography is inconclusive).
+
+
+### 3
+
+High probability of appendicitis (≥ 7)
+
+Pediatric surgeon assessment; in validation, only 4% of operated patients with PAS ≥ 7 did not have appendicitis.
+
+
+### 4
+
+High probability of appendicitis (≥ 7)
+
+Pediatric surgeon assessment; in validation, only 4% of operated patients with PAS ≥ 7 did not have appendicitis.
+

@@ -1,0 +1,240 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "pediatric-appendicitis-score",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "330b8891dfb115d59528f9076330e51b024aaf9c",
+    "oldEngineSha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856",
+    "currentEngineSha256": "0ba80b91195619d7b81309aa8230989f521f224bda07f972c5c048841f03ec05"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Anorexia e náuseas: 2 pontos (baixa, limite)",
+      "input": {
+        "anorexia": true,
+        "nausea": true,
+        "tosse": false,
+        "fid": false,
+        "febre": false,
+        "migra": false,
+        "leuco": false,
+        "neut": false
+      },
+      "publicOutput": {
+        "id": "pediatric-appendicitis-score",
+        "main": [
+          "2",
+          "de 10"
+        ],
+        "label": "PAS",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "de 10"
+        ],
+        "label": "PAS",
+        "level": "low",
+        "verdict": "Baixa probabilidade de apendicite (≤ 2)",
+        "note": "Na validação de Goldman (2008), só 2,4% das crianças com apendicite tinham PAS ≤ 2: alta com orientação de retorno.",
+        "raw": {
+          "score": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Dor à tosse, dor na FID e febre: 5 pontos (intermediária)",
+      "input": {
+        "tosse": true,
+        "fid": true,
+        "febre": true,
+        "anorexia": false,
+        "nausea": false,
+        "migra": false,
+        "leuco": false,
+        "neut": false
+      },
+      "publicOutput": {
+        "id": "pediatric-appendicitis-score",
+        "main": [
+          "5",
+          "de 10"
+        ],
+        "label": "PAS",
+        "raw": {
+          "score": 5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 5,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "5",
+          "de 10"
+        ],
+        "label": "PAS",
+        "level": "mid",
+        "verdict": "Probabilidade intermediária (3 a 6)",
+        "note": "Investigar: observação com reavaliação seriada e ultrassonografia (tomografia se a ultrassonografia for inconclusiva).",
+        "raw": {
+          "score": 5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Dor à tosse, dor na FID, leucocitose, neutrofilia e migração: 7 pontos (alta, limite)",
+      "input": {
+        "tosse": true,
+        "fid": true,
+        "leuco": true,
+        "neut": true,
+        "migra": true,
+        "anorexia": false,
+        "febre": false,
+        "nausea": false
+      },
+      "publicOutput": {
+        "id": "pediatric-appendicitis-score",
+        "main": [
+          "7",
+          "de 10"
+        ],
+        "label": "PAS",
+        "raw": {
+          "score": 7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 7,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7",
+          "de 10"
+        ],
+        "label": "PAS",
+        "level": "high",
+        "verdict": "Alta probabilidade de apendicite (≥ 7)",
+        "note": "Avaliação do cirurgião pediátrico; na validação, só 4% dos operados com PAS ≥ 7 não tinham apendicite.",
+        "raw": {
+          "score": 7
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Todos os itens: 10 pontos",
+      "input": {
+        "tosse": true,
+        "fid": true,
+        "anorexia": true,
+        "febre": true,
+        "nausea": true,
+        "migra": true,
+        "leuco": true,
+        "neut": true
+      },
+      "publicOutput": {
+        "id": "pediatric-appendicitis-score",
+        "main": [
+          "10",
+          "de 10"
+        ],
+        "label": "PAS",
+        "raw": {
+          "score": 10
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 10,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "10",
+          "de 10"
+        ],
+        "label": "PAS",
+        "level": "high",
+        "verdict": "Alta probabilidade de apendicite (≥ 7)",
+        "note": "Avaliação do cirurgião pediátrico; na validação, só 4% dos operados com PAS ≥ 7 não tinham apendicite.",
+        "raw": {
+          "score": 10
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

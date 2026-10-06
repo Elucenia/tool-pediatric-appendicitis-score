@@ -89,3 +89,35 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Faible probabilité d’appendicite (≤ 2)
+
+Dans la validation de Goldman (2008), seulement 2,4 % des enfants atteints d’appendicite avaient un PAS ≤ 2 : sortie avec consignes de retour.
+
+
+### 2
+
+Probabilité intermédiaire (3 à 6)
+
+Examiner : observation avec réévaluation sériée et échographie (tomodensitométrie si l’échographie est non concluante).
+
+
+### 3
+
+Forte probabilité d’appendicite (≥ 7)
+
+Évaluation par le chirurgien pédiatrique ; lors de la validation, seulement 4 % des opérés avec un PAS ≥ 7 n’avaient pas d’appendicite.
+
+
+### 4
+
+Forte probabilité d’appendicite (≥ 7)
+
+Évaluation par le chirurgien pédiatrique ; lors de la validation, seulement 4 % des opérés avec un PAS ≥ 7 n’avaient pas d’appendicite.
+

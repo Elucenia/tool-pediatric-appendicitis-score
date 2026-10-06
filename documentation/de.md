@@ -89,3 +89,35 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Geringe Wahrscheinlichkeit einer Appendizitis (≤ 2)
+
+In der Goldman-Validierung (2008) hatten nur 2,4 % der Kinder mit Appendizitis einen PAS ≤ 2: Entlassung mit Rückkehranweisung.
+
+
+### 2
+
+Mittlere Wahrscheinlichkeit (3 bis 6)
+
+Abklären: Beobachtung mit serieller Reevaluation und Sonographie (CT, wenn die Sonographie nicht schlüssig ist).
+
+
+### 3
+
+Hohe Wahrscheinlichkeit einer Appendizitis (≥ 7)
+
+Beurteilung durch den Kinderchirurgen; in der Validierung hatten nur 4 % der Operierten mit PAS ≥ 7 keine Appendizitis.
+
+
+### 4
+
+Hohe Wahrscheinlichkeit einer Appendizitis (≥ 7)
+
+Beurteilung durch den Kinderchirurgen; in der Validierung hatten nur 4 % der Operierten mit PAS ≥ 7 keine Appendizitis.
+

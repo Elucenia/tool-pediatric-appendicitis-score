@@ -1,0 +1,707 @@
+{
+  "id": "pediatric-appendicitis-score",
+  "implementationVersion": "pediatric-appendicitis-score@native-2026-10-05+0ba80b911956",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Anorexia e náuseas: 2 pontos (baixa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Baixa probabilidade de apendicite (≤ 2)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Na validação de Goldman (2008), só 2,4% das crianças com apendicite tinham PAS ≤ 2: alta com orientação de retorno.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID e febre: 5 pontos (intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilidade intermediária (3 a 6)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Investigar: observação com reavaliação seriada e ultrassonografia (tomografia se a ultrassonografia for inconclusiva).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID, leucocitose, neutrofilia e migração: 7 pontos (alta, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilidade de apendicite (≥ 7)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Avaliação do cirurgião pediátrico; na validação, só 4% dos operados com PAS ≥ 7 não tinham apendicite.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilidade de apendicite (≥ 7)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Avaliação do cirurgião pediátrico; na validação, só 4% dos operados com PAS ≥ 7 não tinham apendicite.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Anorexia e náuseas: 2 pontos (baixa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Low probability of appendicitis (≤ 2)",
+            "locale": "en",
+            "template": "documented-authored-87747de547caca3f8e33"
+          },
+          "note": {
+            "text": "In the Goldman validation (2008), only 2.4% of children with appendicitis had PAS ≤ 2: discharge with return precautions.",
+            "locale": "en",
+            "template": "documented-authored-9cb35d93e7257e8ca5d7"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID e febre: 5 pontos (intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Intermediate probability (3 to 6)",
+            "locale": "en",
+            "template": "documented-authored-11f705f0b77fa67ae088"
+          },
+          "note": {
+            "text": "Investigate: observation with serial reassessment and ultrasonography (CT if ultrasonography is inconclusive).",
+            "locale": "en",
+            "template": "documented-authored-e9f3ce0783547ddc46fb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID, leucocitose, neutrofilia e migração: 7 pontos (alta, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "High probability of appendicitis (≥ 7)",
+            "locale": "en",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "Pediatric surgeon assessment; in validation, only 4% of operated patients with PAS ≥ 7 did not have appendicitis.",
+            "locale": "en",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "High probability of appendicitis (≥ 7)",
+            "locale": "en",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "Pediatric surgeon assessment; in validation, only 4% of operated patients with PAS ≥ 7 did not have appendicitis.",
+            "locale": "en",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Anorexia e náuseas: 2 pontos (baixa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Baja probabilidad de apendicitis (≤ 2)",
+            "locale": "es",
+            "template": "documented-authored-87747de547caca3f8e33"
+          },
+          "note": {
+            "text": "En la validación de Goldman (2008), solo el 2,4% de los niños con apendicitis tenía PAS ≤ 2: alta con indicaciones de retorno.",
+            "locale": "es",
+            "template": "documented-authored-9cb35d93e7257e8ca5d7"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID e febre: 5 pontos (intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilidad intermedia (3 a 6)",
+            "locale": "es",
+            "template": "documented-authored-11f705f0b77fa67ae088"
+          },
+          "note": {
+            "text": "Investigar: observación con reevaluación seriada y ecografía (tomografía si la ecografía es inconclusa).",
+            "locale": "es",
+            "template": "documented-authored-e9f3ce0783547ddc46fb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID, leucocitose, neutrofilia e migração: 7 pontos (alta, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilidad de apendicitis (≥ 7)",
+            "locale": "es",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "Evaluación del cirujano pediátrico; en la validación, solo el 4% de los operados con PAS ≥ 7 no tenían apendicitis.",
+            "locale": "es",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilidad de apendicitis (≥ 7)",
+            "locale": "es",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "Evaluación del cirujano pediátrico; en la validación, solo el 4% de los operados con PAS ≥ 7 no tenían apendicitis.",
+            "locale": "es",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Anorexia e náuseas: 2 pontos (baixa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Faible probabilité d’appendicite (≤ 2)",
+            "locale": "fr",
+            "template": "documented-authored-87747de547caca3f8e33"
+          },
+          "note": {
+            "text": "Dans la validation de Goldman (2008), seulement 2,4 % des enfants atteints d’appendicite avaient un PAS ≤ 2 : sortie avec consignes de retour.",
+            "locale": "fr",
+            "template": "documented-authored-9cb35d93e7257e8ca5d7"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID e febre: 5 pontos (intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilité intermédiaire (3 à 6)",
+            "locale": "fr",
+            "template": "documented-authored-11f705f0b77fa67ae088"
+          },
+          "note": {
+            "text": "Examiner : observation avec réévaluation sériée et échographie (tomodensitométrie si l’échographie est non concluante).",
+            "locale": "fr",
+            "template": "documented-authored-e9f3ce0783547ddc46fb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID, leucocitose, neutrofilia e migração: 7 pontos (alta, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Forte probabilité d’appendicite (≥ 7)",
+            "locale": "fr",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "Évaluation par le chirurgien pédiatrique ; lors de la validation, seulement 4 % des opérés avec un PAS ≥ 7 n’avaient pas d’appendicite.",
+            "locale": "fr",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Forte probabilité d’appendicite (≥ 7)",
+            "locale": "fr",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "Évaluation par le chirurgien pédiatrique ; lors de la validation, seulement 4 % des opérés avec un PAS ≥ 7 n’avaient pas d’appendicite.",
+            "locale": "fr",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Anorexia e náuseas: 2 pontos (baixa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Geringe Wahrscheinlichkeit einer Appendizitis (≤ 2)",
+            "locale": "de",
+            "template": "documented-authored-87747de547caca3f8e33"
+          },
+          "note": {
+            "text": "In der Goldman-Validierung (2008) hatten nur 2,4 % der Kinder mit Appendizitis einen PAS ≤ 2: Entlassung mit Rückkehranweisung.",
+            "locale": "de",
+            "template": "documented-authored-9cb35d93e7257e8ca5d7"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID e febre: 5 pontos (intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mittlere Wahrscheinlichkeit (3 bis 6)",
+            "locale": "de",
+            "template": "documented-authored-11f705f0b77fa67ae088"
+          },
+          "note": {
+            "text": "Abklären: Beobachtung mit serieller Reevaluation und Sonographie (CT, wenn die Sonographie nicht schlüssig ist).",
+            "locale": "de",
+            "template": "documented-authored-e9f3ce0783547ddc46fb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID, leucocitose, neutrofilia e migração: 7 pontos (alta, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hohe Wahrscheinlichkeit einer Appendizitis (≥ 7)",
+            "locale": "de",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "Beurteilung durch den Kinderchirurgen; in der Validierung hatten nur 4 % der Operierten mit PAS ≥ 7 keine Appendizitis.",
+            "locale": "de",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hohe Wahrscheinlichkeit einer Appendizitis (≥ 7)",
+            "locale": "de",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "Beurteilung durch den Kinderchirurgen; in der Validierung hatten nur 4 % der Operierten mit PAS ≥ 7 keine Appendizitis.",
+            "locale": "de",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Anorexia e náuseas: 2 pontos (baixa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Bassa probabilità di appendicite (≤ 2)",
+            "locale": "it",
+            "template": "documented-authored-87747de547caca3f8e33"
+          },
+          "note": {
+            "text": "Nella validazione di Goldman (2008), solo il 2,4% dei bambini con appendicite aveva PAS ≤ 2: dimissione con indicazioni di ritorno.",
+            "locale": "it",
+            "template": "documented-authored-9cb35d93e7257e8ca5d7"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID e febre: 5 pontos (intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilità intermedia (3 a 6)",
+            "locale": "it",
+            "template": "documented-authored-11f705f0b77fa67ae088"
+          },
+          "note": {
+            "text": "Indagare: osservazione con rivalutazione seriata ed ecografia (TC se l’ecografia è inconclusiva).",
+            "locale": "it",
+            "template": "documented-authored-e9f3ce0783547ddc46fb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID, leucocitose, neutrofilia e migração: 7 pontos (alta, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilità di appendicite (≥ 7)",
+            "locale": "it",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "Valutazione del chirurgo pediatrico; nella validazione, solo il 4% degli operati con PAS ≥ 7 non aveva appendicite.",
+            "locale": "it",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilità di appendicite (≥ 7)",
+            "locale": "it",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "Valutazione del chirurgo pediatrico; nella validazione, solo il 4% degli operati con PAS ≥ 7 non aveva appendicite.",
+            "locale": "it",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Anorexia e náuseas: 2 pontos (baixa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "احتمال منخفض لالتهاب الزائدة الدودية (≤ 2)",
+            "locale": "ar",
+            "template": "documented-authored-87747de547caca3f8e33"
+          },
+          "note": {
+            "text": "في التحقق من Goldman (2008)، كان لدى 2,4% فقط من الأطفال المصابين بالتهاب الزائدة الدودية PAS ≤ 2: الخروج مع تعليمات بالعودة.",
+            "locale": "ar",
+            "template": "documented-authored-9cb35d93e7257e8ca5d7"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID e febre: 5 pontos (intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "احتمال متوسط (3 إلى 6)",
+            "locale": "ar",
+            "template": "documented-authored-11f705f0b77fa67ae088"
+          },
+          "note": {
+            "text": "استقصاء: المراقبة مع إعادة تقييم متسلسلة والتصوير بالموجات فوق الصوتية (التصوير المقطعي المحوسب إذا كان التصوير بالموجات فوق الصوتية غير حاسم).",
+            "locale": "ar",
+            "template": "documented-authored-e9f3ce0783547ddc46fb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID, leucocitose, neutrofilia e migração: 7 pontos (alta, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "احتمال مرتفع لالتهاب الزائدة الدودية (≥ 7)",
+            "locale": "ar",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "تقييم جرّاح الأطفال؛ في التحقق، لم يكن لدى 4% فقط من المرضى الذين خضعوا للجراحة مع PAS ≥ 7 التهابُ زائدةٍ دودية.",
+            "locale": "ar",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "احتمال مرتفع لالتهاب الزائدة الدودية (≥ 7)",
+            "locale": "ar",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "تقييم جرّاح الأطفال؛ في التحقق، لم يكن لدى 4% فقط من المرضى الذين خضعوا للجراحة مع PAS ≥ 7 التهابُ زائدةٍ دودية.",
+            "locale": "ar",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Anorexia e náuseas: 2 pontos (baixa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "阑尾炎概率低（≤ 2）",
+            "locale": "zh",
+            "template": "documented-authored-87747de547caca3f8e33"
+          },
+          "note": {
+            "text": "在 Goldman 验证研究（2008）中，只有 2.4% 的阑尾炎儿童 PAS ≤ 2：可出院并告知返院指征。",
+            "locale": "zh",
+            "template": "documented-authored-9cb35d93e7257e8ca5d7"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID e febre: 5 pontos (intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等概率（3 到 6）",
+            "locale": "zh",
+            "template": "documented-authored-11f705f0b77fa67ae088"
+          },
+          "note": {
+            "text": "进一步检查：观察并进行连续复评和超声检查（如超声检查结果不明确，则行 CT）。",
+            "locale": "zh",
+            "template": "documented-authored-e9f3ce0783547ddc46fb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID, leucocitose, neutrofilia e migração: 7 pontos (alta, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "阑尾炎高概率（≥ 7）",
+            "locale": "zh",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "由儿科外科医生评估；在验证中，PAS ≥ 7 的手术患者中只有 4% 实际上没有阑尾炎。",
+            "locale": "zh",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "阑尾炎高概率（≥ 7）",
+            "locale": "zh",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "由儿科外科医生评估；在验证中，PAS ≥ 7 的手术患者中只有 4% 实际上没有阑尾炎。",
+            "locale": "zh",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Anorexia e náuseas: 2 pontos (baixa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "虫垂炎の可能性が低い（≤ 2）",
+            "locale": "ja",
+            "template": "documented-authored-87747de547caca3f8e33"
+          },
+          "note": {
+            "text": "Goldman の検証（2008）では、虫垂炎の小児のうち PAS ≤ 2 だったのは 2.4% のみであった：帰宅時は再受診の指示を付ける。",
+            "locale": "ja",
+            "template": "documented-authored-9cb35d93e7257e8ca5d7"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID e febre: 5 pontos (intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中間確率（3～6）",
+            "locale": "ja",
+            "template": "documented-authored-11f705f0b77fa67ae088"
+          },
+          "note": {
+            "text": "精査：経過観察と連続的再評価、および超音波検査（超音波検査で結論が出ない場合はCT）。",
+            "locale": "ja",
+            "template": "documented-authored-e9f3ce0783547ddc46fb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID, leucocitose, neutrofilia e migração: 7 pontos (alta, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "虫垂炎の高い可能性（≥ 7）",
+            "locale": "ja",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "小児外科医の評価；検証では、PAS ≥ 7 で手術を受けた患者のうち、虫垂炎がなかったのは 4% のみだった。",
+            "locale": "ja",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "虫垂炎の高い可能性（≥ 7）",
+            "locale": "ja",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "小児外科医の評価；検証では、PAS ≥ 7 で手術を受けた患者のうち、虫垂炎がなかったのは 4% のみだった。",
+            "locale": "ja",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Anorexia e náuseas: 2 pontos (baixa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "अपेंडिसाइटिस की कम संभावना (≤ 2)",
+            "locale": "hi",
+            "template": "documented-authored-87747de547caca3f8e33"
+          },
+          "note": {
+            "text": "Goldman सत्यापन (2008) में, अपेंडिसाइटिस वाले केवल 2.4% बच्चों का PAS ≤ 2 था: वापस आने के निर्देशों के साथ छुट्टी।",
+            "locale": "hi",
+            "template": "documented-authored-9cb35d93e7257e8ca5d7"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID e febre: 5 pontos (intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यवर्ती संभावना (3 से 6)",
+            "locale": "hi",
+            "template": "documented-authored-11f705f0b77fa67ae088"
+          },
+          "note": {
+            "text": "जांच करें: क्रमिक पुनर्मूल्यांकन और अल्ट्रासोनोग्राफी के साथ अवलोकन (यदि अल्ट्रासोनोग्राफी अनिर्णायक हो तो CT)।",
+            "locale": "hi",
+            "template": "documented-authored-e9f3ce0783547ddc46fb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dor à tosse, dor na FID, leucocitose, neutrofilia e migração: 7 pontos (alta, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "अपेंडिसाइटिस की उच्च संभावना (≥ 7)",
+            "locale": "hi",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "बाल शल्यचिकित्सक का मूल्यांकन; सत्यापन में, PAS ≥ 7 वाले ऑपरेट किए गए केवल 4% रोगियों में अपेंडिसाइटिस नहीं था।",
+            "locale": "hi",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "अपेंडिसाइटिस की उच्च संभावना (≥ 7)",
+            "locale": "hi",
+            "template": "documented-authored-dae55284613dd10fa357"
+          },
+          "note": {
+            "text": "बाल शल्यचिकित्सक का मूल्यांकन; सत्यापन में, PAS ≥ 7 वाले ऑपरेट किए गए केवल 4% रोगियों में अपेंडिसाइटिस नहीं था।",
+            "locale": "hi",
+            "template": "documented-authored-76e5bf148ed5f525b0d3"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 {
   "id": "pediatric-appendicitis-score",
-  "scope": "Exclusive report-owned R6-HTTP-linked candidate, read-only default test",
+  "scope": "Immutable package integrity; tests write no files",
   "files": [
     {
       "path": ".gitattributes",
@@ -24,8 +24,8 @@
     },
     {
       "path": "calculator.browser.js",
-      "bytes": 5288,
-      "sha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+      "bytes": 5493,
+      "sha256": "0ba80b91195619d7b81309aa8230989f521f224bda07f972c5c048841f03ec05"
     },
     {
       "path": "calculator.js",
@@ -39,8 +39,8 @@
     },
     {
       "path": "CODE-COMPONENTS.md",
-      "bytes": 1121,
-      "sha256": "374b35914f9b149a6bb762e02ef43fc8fade6713a20a6abb73eafe98fd825367"
+      "bytes": 1390,
+      "sha256": "a1f8313371823e26c10c744c97e0cf5e252d79e1ef178edf3a4c4c39ba57693c"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,68 +49,78 @@
     },
     {
       "path": "demo-runtime.js",
-      "bytes": 11656,
-      "sha256": "734da1ceff19b961423e1bb5d2c9eaafd18920b32cc4f331856f6065c9cfd2c9"
+      "bytes": 14286,
+      "sha256": "187cb0a3f2693707660f7fc69fc63ce5e30055a5ccdc621cc7945a0d3b1d2918"
     },
     {
       "path": "documentation/ar.md",
-      "bytes": 4731,
-      "sha256": "8a9af5b3bfd85fc842d3339531020ccb181059073471802f265dc72446da353b"
+      "bytes": 6117,
+      "sha256": "b3236f4b05200e490a070ec2e2add853faf24cd55eafcde57106af965f61f883"
     },
     {
       "path": "documentation/de.md",
-      "bytes": 3827,
-      "sha256": "9cfac75b6ac626b5fb6cede6c05323f395aa932f7a927f72a850d081119db7e9"
+      "bytes": 4724,
+      "sha256": "7717ba3004e4b0ae2040289bd2a2788bd4d1a52000c7ee00532b9af37cda7e5f"
     },
     {
       "path": "documentation/en.md",
-      "bytes": 3364,
-      "sha256": "ea952aeaaedebe869d4389a1157fb667152c56689d769dacbaca24fdbb7de802"
+      "bytes": 4182,
+      "sha256": "37fdbb623ae4916e523fd0e450f5f2fe0a869e201192af08ad04eae5d212495f"
     },
     {
       "path": "documentation/es.md",
-      "bytes": 3678,
-      "sha256": "71203de49dc607161c2e3d5a82376b1752819cb873d0c31104de5558be130076"
+      "bytes": 4528,
+      "sha256": "a9ee792bbfe02ae6cd6b72eb84c1e2eff963a310e0b9753aa7438ff3463534b5"
     },
     {
       "path": "documentation/fr.md",
-      "bytes": 3919,
-      "sha256": "7a721e8cae32c9bdc5be9ad2c80c7866c3f4f8091adb9cbf1589ca5f02e3c131"
+      "bytes": 4885,
+      "sha256": "ab5ea28e1c599f33f4d9e992be7f61e1827c9141ea40c87323fbdb8a35bc39ec"
     },
     {
       "path": "documentation/hi.md",
-      "bytes": 6605,
-      "sha256": "d66359f30f689098ff86596b45efb071f1ec46d884da3d593636364005f92bdf"
+      "bytes": 8442,
+      "sha256": "b87516a099b1f0669ce6cac5f6482111e6926dd8be94b841cdd03b7d9c086ce9"
     },
     {
       "path": "documentation/it.md",
-      "bytes": 3629,
-      "sha256": "e6e503f127e8ad86e7e0ad97a07956b939d0b067316156abcfdc919d9e8517bf"
+      "bytes": 4459,
+      "sha256": "6ba593051f50a7e90cb6e3da0d920ae875a315601452b81ef6d481ce444889c4"
     },
     {
       "path": "documentation/ja.md",
-      "bytes": 3756,
-      "sha256": "c099692afe4db309e835da5440c782763dd348215e19ad955c023c86ff87f6a8"
+      "bytes": 4697,
+      "sha256": "4dbefbb6176ea9dbc3b430fc9104b547c7f15f63e2e09ed05072935b44409016"
     },
     {
       "path": "documentation/pt-BR.md",
-      "bytes": 3481,
-      "sha256": "e2f21b9bc7917ee3f55dfa78c99c1dcdc4998c7ad754629cf9fab8fe07b43aec"
+      "bytes": 4318,
+      "sha256": "1131dfe15c8f4e2e9a0412200ec9a66bf544641a321285ef548c7c4c1b8a3e1f"
     },
     {
       "path": "documentation/zh.md",
-      "bytes": 3038,
-      "sha256": "2572e090f25d136ff6e8097361c71117aa1875ea02846a76238f3bb06d456056"
+      "bytes": 3757,
+      "sha256": "3c0663ee14bccd1cd88bde5336502768216bba66570dce230892aa0e0d8e2c39"
+    },
+    {
+      "path": "documented-result-examples.json",
+      "bytes": 27037,
+      "sha256": "8d1812410798564dd4ff267a6bebbc58004330ea352b573d74251f0b4f10b764"
     },
     {
       "path": "engine/tool-code/pediatric-appendicitis-score/calculator.js",
-      "bytes": 5288,
-      "sha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+      "bytes": 5493,
+      "sha256": "0ba80b91195619d7b81309aa8230989f521f224bda07f972c5c048841f03ec05"
     },
     {
       "path": "evidence/publication-base-reference.json",
       "bytes": 2833,
       "sha256": "c3b099cd9c932e480560187a4c29dca7609293d32590e601f748143dc0717b6f"
+    },
+    {
+      "path": "evidence/publication-provenance-before-output-contract.json",
+      "bytes": 12166,
+      "sha256": "0c9ec00fbca594f2eb12727ff9bbc5bd32d9a2c35f61b14d4e049778474dcad0"
     },
     {
       "path": "evidence/served-http-r6.json",
@@ -134,8 +144,8 @@
     },
     {
       "path": "localization.js",
-      "bytes": 47357,
-      "sha256": "c540acbbfd183b4ca51c5f9bdd8bbb0eb6b42480d8252b54185a8786823ecfe6"
+      "bytes": 63932,
+      "sha256": "43fb4722e4fda67b636b6a14882fbe1cbdcb30c2a1bab95cf92d7d3842a2976a"
     },
     {
       "path": "METHOD-CODE-LICENSE.txt",
@@ -154,23 +164,23 @@
     },
     {
       "path": "package.json",
-      "bytes": 399,
-      "sha256": "d5f0e7d6071a832c8f5546cc7ec9b54a9f458be4129820f71064768cf6287077"
+      "bytes": 493,
+      "sha256": "4848532e73316e7a9cd634fa696ca8e8313f4639c1a6a9b3f5fbc8878c075959"
     },
     {
       "path": "portal-formatters.browser.js",
-      "bytes": 31300,
-      "sha256": "d8522ffe0b858012dfd25e5e8d10fe2eefec977f2bdb612be5cbadf5c4bed9f3"
+      "bytes": 38687,
+      "sha256": "cf0668f6fd44a80a3e4064915cf2da02d2203a9596bd39a9a0a6025fb12e17f4"
     },
     {
       "path": "publication-provenance.json",
-      "bytes": 12166,
-      "sha256": "0c9ec00fbca594f2eb12727ff9bbc5bd32d9a2c35f61b14d4e049778474dcad0"
+      "bytes": 6382,
+      "sha256": "ce5013808f8b4e718eaae3ffcb3493daeb7aa186ba0ef6000e77750e190afe7a"
     },
     {
       "path": "README.md",
-      "bytes": 3210,
-      "sha256": "c9181bc6da8c26c9f5394c10e98184129b5aba0d1267bee121d671ed7b0aa843"
+      "bytes": 3804,
+      "sha256": "ce99a86da08253b81f281847dee5b639fe3b67c2d4aeacc9e5989d18102a40e8"
     },
     {
       "path": "rejections.json",
@@ -188,9 +198,24 @@
       "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
     },
     {
+      "path": "source-result-contract.json",
+      "bytes": 6626,
+      "sha256": "48625f94fefcd70bbe14614a3790801357ea67ff78c677649d217d11aa4cef23"
+    },
+    {
       "path": "SOURCE-RIGHTS-REVIEW.md",
       "bytes": 1817,
       "sha256": "58aae4672cc774357557a5be5ec6ad259a1ba23e0dd1df6a4592429b9186ccfe"
+    },
+    {
+      "path": "test-presentation-contract.cjs",
+      "bytes": 1923,
+      "sha256": "a4a1734ea3d00c17ffeed7abbd605663459b7c190b695d2396cc58da93215cec"
+    },
+    {
+      "path": "test-source-result-contract.cjs",
+      "bytes": 1416,
+      "sha256": "cbadaf0576ecc2884c7523902880d2068e3a9b6b63df418359ab42219af2e386"
     },
     {
       "path": "test.cjs",
@@ -199,8 +224,8 @@
     },
     {
       "path": "tool.json",
-      "bytes": 30961,
-      "sha256": "b027e118fc3857fce88175c31f43ff80cb9c1ee8648316e2df5212eb6a9bbee7"
+      "bytes": 32470,
+      "sha256": "de5cb2345d05e1a9c1a1dde5cc2b14bec62e27eff4df30e1161229b0b6ecbc9d"
     }
   ]
 }

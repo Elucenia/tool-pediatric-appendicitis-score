@@ -89,3 +89,35 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Baixa probabilidade de apendicite (≤ 2)
+
+Na validação de Goldman (2008), só 2,4% das crianças com apendicite tinham PAS ≤ 2: alta com orientação de retorno.
+
+
+### 2
+
+Probabilidade intermediária (3 a 6)
+
+Investigar: observação com reavaliação seriada e ultrassonografia (tomografia se a ultrassonografia for inconclusiva).
+
+
+### 3
+
+Alta probabilidade de apendicite (≥ 7)
+
+Avaliação do cirurgião pediátrico; na validação, só 4% dos operados com PAS ≥ 7 não tinham apendicite.
+
+
+### 4
+
+Alta probabilidade de apendicite (≥ 7)
+
+Avaliação do cirurgião pediátrico; na validação, só 4% dos operados com PAS ≥ 7 não tinham apendicite.
+

@@ -306,7 +306,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "PAS/Samuel 2002:8 fatores,0–10; sem Alvarado oup ARC",
-    "implementationVersion": "pediatric-appendicitis-score@native-2026-10-03+280a54f88322",
+    "implementationVersion": "pediatric-appendicitis-score@native-2026-10-05+0ba80b911956",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/12037754/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -586,7 +586,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+      "implementationHash": "0ba80b91195619d7b81309aa8230989f521f224bda07f972c5c048841f03ec05",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "pediatric-appendicitis-score@native-2026-10-03+280a54f88322",
+          "previousImplementationHash": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856",
+          "implementationHash": "0ba80b91195619d7b81309aa8230989f521f224bda07f972c5c048841f03ec05",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "c2b21f2bddf2d230743f148b7312bdbb25f83194e25135970bffa7e67007a5c3",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O PAS original de Samuel (2002) foi derivado em crianças de 4–15 anos. A validação de Goldman (2008) estudou crianças de 1–17 anos com dor abdominal há menos de 7 dias; excluiu apendicectomia prévia e diagnóstico de apendicite por ultrassonografia ou tomografia já estabelecido na chegada. A avaliação de sintomas subjetivos exige cuidado em crianças que ainda não conseguem comunicá-los. O escore não é pARC nem determina sozinho diagnóstico, alta, imagem ou cirurgia.",
     "limitsEvidence": {
@@ -612,20 +640,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/pediatric-appendicitis-score/calculator.js",
-    "bytes": 5288,
-    "sha256": "280a54f883220b12d82fa25c9da9e07fc62ab3ee866f82d6b283b53bc2a0a856"
+    "bytes": 5493,
+    "sha256": "0ba80b91195619d7b81309aa8230989f521f224bda07f972c5c048841f03ec05"
   },
-  "sourceToolSha256": "7ed56e7dc40cd8d4c3b70b68becabdad92d90e3429872fb5a159af742d1e6f82",
+  "sourceToolSha256": "e0d2062091faf7169a549270dff0dd3acc523dea36c9c68bb7e4c1f537cb1dfd",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "dcee32c314d3fc72afc2ca735e102ef83773ad5cd899e72385d0d15216610ee3",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "dcee32c314d3fc72afc2ca735e102ef83773ad5cd899e72385d0d15216610ee3",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",
